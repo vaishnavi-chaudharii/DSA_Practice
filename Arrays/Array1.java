@@ -4,6 +4,17 @@ import java.util.Scanner;
 
 
 class Array1 {
+
+    public static int isLargest(int arr[]){
+        int size = arr.length;
+        int max = Integer.MIN_VALUE;
+        for(int i = 0; i < size; i++){
+            if(max < arr[i]){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
     public static int[] getData() {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
