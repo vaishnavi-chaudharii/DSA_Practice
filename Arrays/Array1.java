@@ -31,10 +31,13 @@ class Array1 {
         for(int i = 0; i < size; i++){
             System.out.print(arr[i] + " ");
         }
+        System.out.println();
     }
     
     public static void main(String[] args) {
         int arr[] = getData();
         printArr(arr);
+        int largest = isLargest(arr);
+        System.out.println("Largest= " +largest);
     }
 }
