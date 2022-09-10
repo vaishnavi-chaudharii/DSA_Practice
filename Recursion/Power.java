@@ -3,8 +3,8 @@ package Recursion;
 class Power {
 
     static int isPower(int n, int e){
-        if(e == 0 || e == 1){
-            return n;
+        if(e == 0){
+            return 1;
         }
         else{
             return n * isPower(n, e-1);
@@ -12,7 +12,7 @@ class Power {
     }
 
     public static void main(String[] args) {
-        int pow = isPower(10, 2);
+        int pow = isPower(10, 1);
         System.out.println(pow);
     }
 }
